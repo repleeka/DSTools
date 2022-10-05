@@ -4,6 +4,7 @@ import pandas as pd
 from pandas_profiling import ProfileReport
 
 df = pd.read_csv('Colon.csv', engine='python')
+# taking the last 10 columns only
 cols = df.columns[0:1990]
 df.drop(cols, axis=1, inplace=True)
 df
