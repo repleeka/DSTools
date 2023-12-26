@@ -1,4 +1,4 @@
-def getCSVFromArff(fileName):
+def csv_to_arff(fileName):
     with open(fileName + '.arff', 'r') as fin:
         data = fin.read().splitlines(True)
     i = 0
@@ -23,4 +23,4 @@ def getCSVFromArff(fileName):
         fout.writelines(data[i:])
 
 
-getCSVFromArff("Lung")
+csv_to_arff("Lung")
